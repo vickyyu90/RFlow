@@ -1,0 +1,10 @@
+_target_: src.data.proteingym_substitution_datamodule.ProteinGymSubstitutionData
+data_dir: /path/to/your/data/
+batch_size: 1
+num_workers: 0
+pin_memory: False
+
+assay_index: 181
+split_type: modulo
+split_index: 0
+support_assay_num: 40

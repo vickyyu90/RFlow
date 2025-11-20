@@ -1,0 +1,24 @@
+_target_: src.models.RankFlow_module.RankFlow
+
+optimizer:
+  _target_: torch.optim.AdamW
+  _partial_: True
+  lr: 1e-4
+  weight_decay: 0.005
+
+scheduler:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: True
+  mode: min
+  factor: 0.9
+  patience: 10
+
+model: esm2
+efm_beta: 1.0
+steps_ref: 20
+eta_ref: 0.02
+t0_ref: 0.1
+lambda_y: 0.5
+
+# compile model for faster training with pytorch 2.0
+compile: false
