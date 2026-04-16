@@ -34,3 +34,8 @@ We can train and test RankFlow as follows.
 ```
 
 The program will start training with the default settings. To modify any hyperparameters, edit `configs/model/RankFlow.yaml` or `configs/rankflow.yaml`. In the example provided, we train on the assay `SPG1_STRSG_Olson_2014`. If you want to train on a different assay, update the assay_index field in `configs/data/proteingym.yaml`.
+
+## Contact
+Thank you for your interest in our work!
+
+Please feel free to ask about any questions about the algorithms, codes, as well as problems encountered in running them by contacting l.yu@latrobe.edu.au.
